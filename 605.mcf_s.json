@@ -1,0 +1,10 @@
+{
+  "name": "605.mcf_s",
+  "base": "spec-imafd-base.json",
+  "workdir": ".",
+  "rootfs-size": "3GiB",
+  "files": [
+    ["speckle/build/overlay/intspeed/605.mcf_s", "/root/605.mcf_s"]
+  ],
+  "command": "cd /root/605.mcf_s && echo BENCH_STARTED && ./run.sh; rc=$?; echo BENCH_EXIT_CODE=$rc; poweroff -f"
+}

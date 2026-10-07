@@ -1,0 +1,10 @@
+{
+  "name": "631.deepsjeng_s",
+  "base": "spec-imafd-base.json",
+  "workdir": ".",
+  "rootfs-size": "3GiB",
+  "files": [
+    ["speckle/build/overlay/intspeed/631.deepsjeng_s", "/root/631.deepsjeng_s"]
+  ],
+  "command": "cd /root/631.deepsjeng_s && echo BENCH_STARTED && ./run.sh; rc=$?; echo BENCH_EXIT_CODE=$rc; poweroff -f"
+}

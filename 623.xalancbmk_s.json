@@ -1,0 +1,10 @@
+{
+  "name": "623.xalancbmk_s",
+  "base": "spec-imafd-base.json",
+  "workdir": ".",
+  "rootfs-size": "3GiB",
+  "files": [
+    ["speckle/build/overlay/intspeed/623.xalancbmk_s", "/root/623.xalancbmk_s"]
+  ],
+  "command": "cd /root/623.xalancbmk_s && echo BENCH_STARTED && ./run.sh; rc=$?; echo BENCH_EXIT_CODE=$rc; poweroff -f"
+}

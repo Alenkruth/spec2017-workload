@@ -1,0 +1,11 @@
+{
+  "name": "spec-imafd-base",
+  "base": "br-base.json",
+  "workdir": ".",
+  "linux": {
+    "config": "linux-imafd.config"
+  },
+  "firmware": {
+    "opensbi-build-args": "PLATFORM_RISCV_ISA=rv64imafd_zicsr_zifencei"
+  }
+}

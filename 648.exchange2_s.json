@@ -1,0 +1,10 @@
+{
+  "name": "648.exchange2_s",
+  "base": "spec-imafd-base.json",
+  "workdir": ".",
+  "rootfs-size": "3GiB",
+  "files": [
+    ["speckle/build/overlay/intspeed/648.exchange2_s", "/root/648.exchange2_s"]
+  ],
+  "command": "cd /root/648.exchange2_s && echo BENCH_STARTED && ./run.sh; rc=$?; echo BENCH_EXIT_CODE=$rc; poweroff -f"
+}

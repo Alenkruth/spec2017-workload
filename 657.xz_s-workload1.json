@@ -1,0 +1,10 @@
+{
+  "name": "657.xz_s-workload1",
+  "base": "spec-imafd-base.json",
+  "workdir": ".",
+  "rootfs-size": "3GiB",
+  "files": [
+    ["speckle/build/overlay/intspeed/657.xz_s", "/root/657.xz_s"]
+  ],
+  "command": "cd /root/657.xz_s && echo BENCH_STARTED && ./run_workload1.sh; rc=$?; echo BENCH_EXIT_CODE=$rc; poweroff -f"
+}
